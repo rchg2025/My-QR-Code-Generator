@@ -1,0 +1,19 @@
+{
+  "name": "my-qr-generator/plugin",
+  "description": "WordPress QR code and shortlink generator with dynamic scheduling",
+  "type": "wordpress-plugin",
+  "license": "GPL-2.0-or-later",
+  "require": {
+    "php": ">=7.4",
+    "phpqrcode/phpqrcode": "^1.1"
+  },
+  "autoload": {
+    "files": [
+      "vendor/phpqrcode/qrlib.php"
+    ]
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "sort-packages": true
+  }
+}
